@@ -1,0 +1,299 @@
+/*GLOBAL========================================================================*/
+*{
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+/*TYPOGRAPHY-----------------------------------------------------------------------*/
+body{
+	font-family:"Inter", sans-serif;
+	font-weight:400;
+	margin:0;
+}
+
+h1{
+	font-size:3.5rem;
+	font-weight: 700;
+}
+
+h2{
+	font-size:3rem;
+	font-weight:600;
+}
+
+h3{
+	font-size:2.25rem;
+	font-weight:600;
+}
+
+h4{
+	font-size:1.875rem;
+	font-weight:600;
+}
+
+h5{
+	font-size:1.5rem;
+	font-weight:600;
+}
+
+h6{
+	font-size:1.25rem;
+}
+
+
+p{
+	font-size:1rem;
+	font-weight:400;
+}
+
+.footer-fineprint{
+	font-size:1rem;
+}
+
+.semi-bold{
+	font-weight:600;
+}
+
+.non-bold{
+	font-weight:400;
+}
+
+
+/*COLOR SWATCHES---------------------------------------------------------------------------------------------*/
+.regular-orange{
+	background:#FF9425;
+	color:#FFFFFF;
+}
+
+.light-orange{
+	background:#FFBB73;
+}
+
+.dark-mode-black{
+	background:#373A36;
+}
+
+.regular-orange-text{
+	color:#FF9425;
+}
+
+.light-orange-text{
+	color:#FFBB73;
+}
+
+/*BUTTONS------------------------------------------------------------------------------------------*/
+.button{
+	border-radius:10px;
+	padding:5px 10px 5px 10px;
+	border:2px solid black;
+}
+
+.button.light-mode{
+	margin-right:0.625rem;
+}
+
+
+/*NAVIGATION BAR---------------------------------------------------------------------------------*/
+header{
+	/*position:sticky;
+	top:0;
+	height:0;
+	z-index:999;*/
+	display:flex;
+	justify-content: space-between;
+	padding:1.875rem;
+	background:white;
+}
+
+header a{
+	text-decoration: none;
+}
+
+.nav-logo h6{
+	margin:0;
+}
+
+.nav-links{
+	display:flex;
+	justify-content: space-between;
+}
+
+.nav-links h6{
+	display:flex;
+	justify-content: space-between;
+	margin:0;
+	color:black;
+}
+
+.link-one{
+	padding-right:2.5rem	;
+}
+
+/*DIVIDER LINE--------------------------------------------------------------------------------------*/
+.divider-line{
+	display:block;
+	width:clamp(70%,75%,80%);
+	height:1px;
+	background: rgb(0,0,0, .5);
+	margin: 1em 0;
+	padding:0;
+}
+
+/*FOOTER------------------------------------------------------------------------------------------------*/
+.footer-container{
+	display:grid;
+	padding:2.5rem 2.5rem;
+}
+
+.footer-container a{
+	text-decoration:none;
+	color:black;
+}
+
+.footer-container h5{
+	margin:0;
+	margin-bottom:0.625rem;
+}
+
+.footer-container p{
+	margin:0.625rem 0rem;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.footer-middle{
+	display:flex;
+	justify-content: space-between;
+	align-items:baseline;
+}
+
+.creation-text p{
+	margin-bottom:0;
+}
+
+.update-text p{
+	margin-top:0;
+}
+
+/*INDEX PAGE===================================================================================*/
+
+/*LANDING PAGE-------------------------------------------------------------------------------------*/
+#landing{
+	position:relative;
+	height:75vh;
+}
+
+.ethos{
+	grid-column:1/11;
+}
+
+.ethos h1{
+	margin-top:1.25rem;
+	margin-bottom:1.25rem;
+}
+
+.ethos h4{
+	margin:2.5rem 0 0 0;
+}
+
+.ethos-bar-info{
+	display:flex;
+}
+
+.ethos-bar-info p{
+	margin:0;
+}
+
+.ethos-bar-location{
+	padding-right:2.5rem;
+}
+
+#lower-bar{
+	/*display:flex;
+	justify-content: center;*/
+	grid-column:1/14;
+	grid-row:2/3;
+	display:grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr;
+	margin:0 1.25rem;
+	padding:0 0 6.25rem 0;
+}
+
+.scroll-indicator{
+	grid-column: 2/3;
+	justify-self: center;
+}
+
+.theme-buttons{
+	grid-column: 3/4;
+	display:flex;
+	justify-content: flex-end;
+}
+
+/*WORKS SECTIONS----------------------------------------------------------------------------------------*/
+#works .divider-line{
+	width:auto;
+	margin:0 9.375rem;
+}
+
+#works h3{
+	margin-top:0;
+	margin-bottom:0.625rem;
+}
+
+#works h6{
+	margin-top:0;
+	margin-bottom:2.5rem;
+}
+
+.progress-bar{
+	display:flex;
+	justify-content: flex-start;
+	width: clamp(18.75rem,75%,100rem);
+	margin:0 auto;
+	padding-top:2.5rem;
+}
+
+.progress-bar a{
+	text-decoration: none;
+	color:black;
+}
+
+.progress-bar-works{
+	display:flex;
+}
+
+.progress-bar-text{
+	padding-right:2.5rem;
+}
+
+.work-pages-content{
+	grid-column: 1/6;
+}
+
+.work-pages-images-container{
+	grid-column:7/13;
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-gap:1.25rem;
+}
+
+.main-grid-container.work img{
+	width:100%;
+	height:auto;
+}
+
+
+/*.ethos-bar-location{
+	grid-column:1/4;
+}
+
+.ethos-bar-status{
+	grid-column:5/14;
+}*/
+

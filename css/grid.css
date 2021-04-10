@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+
+.main-grid-container{
+	display:block;
+	width: clamp(18.75rem,75%,100rem);
+	margin:0 auto;
+	height:100%;
+	padding-top:6.25rem;
+}
+
+.main-grid{
+	display:grid;
+	grid-template-columns:repeat(12,1fr);
+	height:100%;
+}
+
+.main-grid-container.work{
+	display:block;
+	width: clamp(18.75rem,75%,100rem);
+	margin:0 auto;
+	padding-top:5rem;
+	padding-bottom:5rem;
+	height:auto;
+}
+
+.main-grid.work{
+	display:grid;
+	grid-template-columns:repeat(12,1fr);
+	height:auto;
+}
