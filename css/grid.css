@@ -16,6 +16,16 @@
 	height:100%;
 }
 
+.main-grid img{
+	width:100%;
+	height:auto;
+}
+
+.main-grid video{
+	width:100%;
+	height:auto;
+}
+
 .main-grid-container.work{
 	display:block;
 	width: clamp(18.75rem,75%,100rem);
