@@ -30,8 +30,8 @@
 	display:block;
 	width: clamp(18.75rem,75%,100rem);
 	margin:0 auto;
-	padding-top:5rem;
-	padding-bottom:5rem;
+	padding-top:5.25rem;
+	padding-bottom:5.25rem;
 	height:auto;
 }
 

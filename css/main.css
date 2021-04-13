@@ -98,6 +98,10 @@ p{
 	color:#FFBB73;
 }
 
+.white{
+	background:white;
+}
+
 /*BUTTONS------------------------------------------------------------------------------------------*/
 .button{
 	border-radius:10px;
@@ -264,6 +268,11 @@ header a{
 	margin-bottom:2.5rem;
 }
 
+.progress-bar-wrapper{
+	/*position:sticky;
+	top:0;*/
+}
+
 .progress-bar{
 	display:flex;
 	justify-content: flex-start;
@@ -311,6 +320,14 @@ header a{
 }*/
 
 /*WORKS PAGE (VENTURA FUTURE)=====================================================================*/
+.text-section{
+	grid-column: 1/13;
+}
+
+#final-thoughts{
+	padding-bottom:2.5rem;
+}
+
 /*WORK PREVIEW SECTION-----------------------------------------------------------------------*/
 .main-grid.works{
 	grid-gap:1.25rem;
@@ -359,14 +376,6 @@ header a{
 	line-height: 1.5rem;
 }
 
-/*MAIN CONTENT-----------------------------------------------------------------*/
-#overview{
-	grid-column: 1/13;
-}
-
-#analysis{
-	grid-column: 1/13;
-}
 
 /*GRAPHIC ASSETS-----------------------------------------------------------------*/
 #principles-grid{
@@ -420,10 +429,6 @@ header a{
 	margin-bottom:1.25rem;
 }
 
-#graphical-assets-implementation{
-	grid-column:1/13;
-}
-
 .graphical-experimentation-header{
 	grid-column: 1/13;
 }
@@ -449,14 +454,6 @@ header a{
 }
 
 /*MICROSITE ASSETS------------------------------------------------------------------------------------*/
-#microsite-implementation{
-	grid-column: 1/13;
-}
-
-#microsite-form{
-	grid-column:1/13;
-}
-
 .microsite-example{
 	grid-column: 1/13;
 }
@@ -470,6 +467,7 @@ header a{
 .works-subheader{
 	margin-top:1.25rem;
 	margin-bottom:1.25rem;
+	font-weight:600;
 }
 
 .example-gif{
@@ -495,11 +493,6 @@ header a{
 }
 
 /*FINAL THOUGHTS AND INDEX-----------------------------------------------------------------------*/
-#final-thoughts{
-	grid-column: 1/13;
-	padding-bottom:6.25rem;
-}
-
 #works-index{
 	margin:0 2.5rem;
 	padding-bottom:4rem;
@@ -529,4 +522,92 @@ header a{
 
 .works-name p{
 	margin:0;
+}
+
+
+/*WORKS PAGE (DIPP'D DONUTS)========================================================================*/
+/*WORK PREVIEW SECTION-----------------------------------------------------------------------*/
+.work-preview-content.dippd-page{
+	grid-column:8/12;
+}
+
+/*RESEARCH GATHERINGS-----------------------------------------------------------------*/
+.client-goals{
+	grid-column:1/7;
+}
+
+.user-goals{
+	grid-column:7/13;
+}
+
+
+/*BRAND ITERATIONS------------------------------------------------------------------------------*/
+.moodboard-directions-header{
+	grid-column: 1/13;
+}
+
+.moodboard-image-1{
+	grid-column: 1/6;
+}
+
+.moodboard-image-2{
+	grid-column:6/13;
+}
+
+
+.example-image{
+	grid-column: 1/8;
+}
+
+/*DEVELOPING THE DESIGN----------------------------------------------------------------------*/
+#developing-design{
+	padding-top:2.5rem;
+}
+
+
+
+/*IMPLEMENTING THE DESIGN----------------------------------------------------------------------*/
+#implementing-design{
+	padding-top:2.5rem;
+}
+
+/*FINAL VIDEO ASSETS-------------------------------------------------------------------------*/
+.example-video.dippd-mobile{
+	grid-column:1/4;
+}
+
+.example-video.dippd-desktop{
+	grid-column:4/13;
+}
+
+
+/*THIS IS ME (ABOUT PAGE)========================================================================*/
+.about-me-left-side{
+	grid-column:1/6;
+}
+
+.about-me-right-side{
+	grid-column:7/13;
+}
+
+.about-me-right-side img{
+	width:50%;
+}
+
+.about-h6{
+	padding-bottom:0;
+	margin-bottom:0;
+}
+
+.about-bullets{
+	padding:0;
+}
+
+.extra-info-1{
+	grid-column: 1/4;
+	padding-bottom:6.25rem;
+}
+
+.extra-info-2{
+	grid-column:5/8;
 }
