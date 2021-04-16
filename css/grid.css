@@ -11,7 +11,7 @@
 }
 
 #landing .main-grid-container{
-	padding-top:5rem;
+	padding-top:6.25rem;
 	padding-bottom:5rem;
 }
 
@@ -384,6 +384,12 @@
 		font-size:1.875rem;
 	}
 
+	/*INDEX-------------------------------*/
+	#landing .main-grid-container{
+		margin:0 1.875rem 0 1.875rem;
+		padding-top:2.5rem;
+	}
+
 	/*WORKS----------------------------*/
 	#work-preview{
 		padding-top:1.5rem;
@@ -512,6 +518,7 @@
 	/*INDEX--------------------------------*/
 	#landing .main-grid-container{
 		margin:0 1.25rem 0 1.25rem;
+		padding-top:2rem;
 	}
 
 	.main-grid-container.work{
