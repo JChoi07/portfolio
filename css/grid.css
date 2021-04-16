@@ -51,10 +51,6 @@
 		padding-top:2.5rem;
 	}
 
-	#landing .main-grid-container{
-		padding-top:2rem;
-	}
-
 }
 
 
@@ -124,10 +120,6 @@
 	/*GLOBAL=========================*/
 	#landing .main-grid-container{
 		padding-top:3rem;
-	}
-
-	#landing .main-grid-container{
-		padding-top:1.75rem;
 	}
 }
 
