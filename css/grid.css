@@ -247,29 +247,14 @@
 		display:flex;
 	}
 
-	.final-graphic-assets-img1{
-		grid-column:1/13;
-	}
-
-	.final-graphic-assets-img2{
-		grid-column:1/13;
-	}
-
-	.final-graphic-assets-img3{
-		grid-column:1/13;
-	}
-
-	.example-gif{
+	.graphical-experimentation-image, .final-graphic-assets-img1, .final-graphic-assets-img2, .final-graphic-assets-img3,
+	.example-gif, .example-image{
 		grid-column:1/13;
 	}
 
 	.exmaple-information{
 		grid-column:1/13;
 		grid-row:1/2;
-	}
-
-	.example-image{
-		grid-column:1/13;
 	}
 
 	.client-goals, .user-goals, .moodboard-image-1, .moodboard-image-2{
@@ -391,7 +376,6 @@
 
 	/*INDEX-------------------------------*/
 	#landing .main-grid-container{
-		margin:0 1.875rem 0 1.875rem;
 		padding-top:2.5rem;
 	}
 
