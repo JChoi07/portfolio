@@ -10,6 +10,11 @@
 	padding-top:5rem;
 }
 
+#landing .main-grid-container{
+	padding-top:5rem;
+	padding-bottom:5rem;
+}
+
 
 .main-grid{
 	display:grid;
@@ -42,7 +47,10 @@
 	height:auto;
 }
 
-/*Comment test*/
+.main-grid.works{
+	padding:0 7.5rem;
+}
+
 
 
 /*MEDIA QUERIES========================================================================================*/
@@ -53,6 +61,10 @@
 		padding-top:2.5rem;
 	}
 
+	#landing .main-grid-container{
+		padding-top:2rem;
+		padding-bottom:2rem;
+	}
 }
 
 
@@ -86,6 +98,33 @@
 	}
 }
 
+/*Inbetween (1072px)-----------------------------------------------------------------------------------*/
+@media screen and (max-width:67em){
+	/*WORKS------------------------*/
+	#work-preview{
+		padding-top:2.5rem;
+	}
+
+	.work-preview-image{
+		grid-column:1/13;
+	}
+
+	.work-preview-content{
+		grid-column:1/10;
+		padding-left:2.5rem;
+	}
+
+
+	.main-grid.works{
+		padding:0 4rem;
+	}
+
+	/*ABOUT ME-----------------------*/
+	.main-grid-container.about-me{
+		padding-top:1.75rem;
+	}
+}
+
 
 /*Inbetween (1020px)-----------------------------------------------------------------------------------*/
 @media screen and (max-width:63.75em){
@@ -102,6 +141,15 @@
 	#works .divider-line{
 		margin:0 6rem;
 	}
+
+	/*ABOUT ME PAGE------------------*/
+	.about-me-left-side{
+		grid-column:1/13;
+	}
+
+	.about-me-right-side{
+		grid-column:1/10;
+	}
 }
 
 /*Inbetween (896px)------------------------------------------------------------------*/
@@ -115,6 +163,15 @@
 	#works .divider-line{
 		margin:0 4rem;
 	}
+
+	/*ABOUT ME PAGE------------------*/
+	.extra-info-1{
+		grid-column:1/6;
+	}
+
+	.extra-info-2{
+		grid-column:6/13;
+	}
 }
 
 /*Inbetween (840px)------------------------------------------------------------------*/
@@ -123,6 +180,16 @@
 	#landing .main-grid-container{
 		padding-top:3rem;
 	}
+
+	#landing .main-grid-container{
+		padding-top:1rem;
+		padding-bottom:2rem;
+	}
+
+	/*WORKS-----------------------------*/
+	/*.text-section{
+		grid-column: 1/13;
+	}*/
 }
 
 
@@ -154,6 +221,63 @@
 		padding-top:3rem;
 		padding-bottom:3rem;
 	}
+
+	/*WORKS-------------------------*/
+	.main-grid.works{
+		padding:0 0;
+	}
+
+	.work-preview-content{
+		grid-column:1/12;
+		padding-left:5.5rem;
+	}
+
+	.principles-header{
+		grid-column:1/13;
+	}
+
+	.principle{
+		grid-column:1/13;
+		display:flex;
+	}
+
+	.final-graphic-assets-img1{
+		grid-column:1/13;
+	}
+
+	.final-graphic-assets-img2{
+		grid-column:1/13;
+	}
+
+	.final-graphic-assets-img3{
+		grid-column:1/13;
+	}
+
+	.example-gif{
+		grid-column:1/13;
+	}
+
+	.exmaple-information{
+		grid-column:1/13;
+		grid-row:1/2;
+	}
+
+	.example-image{
+		grid-column:1/13;
+	}
+
+	.client-goals, .user-goals, .moodboard-image-1, .moodboard-image-2{
+		grid-column:1/13;
+	}
+
+	.example-video.dippd-desktop{
+		grid-column:1/13;
+		grid-row:14/15;
+	}
+
+	.example-video.dippd-mobile{
+		grid-column:4/10;
+	}
 }
 
 /*Inbetween (660px)------------------------------------------------------------------*/
@@ -183,6 +307,15 @@
 		justify-self:start;
 	}
 
+	/*WORKS----------------------------*/
+	.work-preview-content{
+		padding-left:5rem;
+	}
+
+	/*ABOUT ME PAGE------------------*/
+	.extra-info-2{
+		grid-column:8/13;
+	}
 }
 
 
@@ -198,6 +331,11 @@
 	#works .divider-line{
 		margin:0 2.5rem;
 	}
+
+	#landing .main-grid-container{
+		padding-top:4rem;
+		padding-bottom:3rem;
+	}
 }
 
 /*Inbetween (544px)------------------------------------------------------------------*/
@@ -211,6 +349,23 @@
 	.theme-buttons img{
 		width:20px;
 		height:20px;
+	}
+
+	/*WORKS----------------------------*/
+	.work-preview-content{
+		padding-left:4rem;
+	}
+
+	/*ABOUT ME PAGE------------------*/
+	.about-me-right-side{
+		grid-column:1/13;
+	}
+
+	.extra-info-1{
+		grid-column:1/7;
+	}
+	.extra-info-2{
+		grid-column:9/13;
 	}
 }
 
@@ -226,6 +381,24 @@
 	}
 	h3{
 		font-size:1.875rem;
+	}
+
+	/*WORKS----------------------------*/
+	#work-preview{
+		padding-top:1.5rem;
+	}
+
+	.work-preview-content{
+		padding-left:3.75rem;
+	}
+
+	.example-video.dippd-mobile{
+		grid-column:2/12;
+	}
+
+	/*ABOUT ME---------------------------*/
+	.main-grid-container.about-me{
+		padding-top:1.5rem;
 	}
 }
 
@@ -253,6 +426,11 @@
 		grid-template-columns: 1.5fr 2.5fr 1fr;
 	}
 
+	/*WORKS----------------------------*/
+	.work-preview-content{
+		padding-left:3.5rem;
+	}
+
 }
 
 /*Inbetween (400px)-----------------------------------------------------------------------*/
@@ -260,6 +438,15 @@
 	/*INDEX---------------------------*/
 	#works .divider-line{
 		margin:0 1.75rem;
+	}
+
+	#landing .main-grid-container{
+		padding-bottom:5rem;
+	}
+
+	/*WORKS----------------------------*/
+	.work-preview-content{
+		padding-left:3rem;
 	}
 }
 
@@ -286,6 +473,11 @@
 
 	#works .divider-line{
 		margin:0 1rem;
+	}
+
+	#landing .main-grid-container{
+		padding-top:5rem;
+		padding-bottom:3rem;
 	}
 }
 
@@ -331,6 +523,15 @@
 
 	#works .divider-line{
 		margin:0 0.875rem;
+	}
+
+	/*WORKS----------------------------*/
+	.work-preview-content{
+		padding-left:3rem;
+	}
+
+	.main-grid.works{
+		padding:0 2rem;
 	}
 }
 

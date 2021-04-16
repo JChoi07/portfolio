@@ -235,7 +235,7 @@ header a{
 /*LANDING PAGE-------------------------------------------------------------------------------------*/
 #landing{
 	position:relative;
-	height:75vh;
+	/*height:75vh;*/
 }
 
 .ethos{
@@ -434,22 +434,7 @@ header a{
 	margin-bottom:0;
 }
 
-.principle-1{
-	grid-column:5/13;
-	display:flex;
-}
-
-.principle-2{
-	grid-column:5/13;
-	display:flex;
-}
-
-.principle-3{
-	grid-column:5/13;
-	display:flex;
-}
-
-.principle-4{
+.principle{
 	grid-column:5/13;
 	display:flex;
 }
@@ -550,8 +535,18 @@ header a{
 }
 
 .works-name{
-	display:flex;
-	justify-content: space-between;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+}
+
+.left-work{
+	grid-column:1/2;
+}
+
+.right-work{
+	grid-column: 3/4;
+	justify-self: end; 
+	text-align:right;
 }
 
 .works-name p{
