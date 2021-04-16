@@ -6,9 +6,10 @@
 	display:block;
 	width: clamp(18.75rem,75%,100rem);
 	margin:0 auto;
-	height:100%;
-	padding-top:6.25rem;
+	height:auto;
+	padding-top:5rem;
 }
+
 
 .main-grid{
 	display:grid;
@@ -40,3 +41,303 @@
 	grid-template-columns:repeat(12,1fr);
 	height:auto;
 }
+
+
+/*MEDIA QUERIES========================================================================================*/
+/*Inbetween (1364px)--------------------------------------------------------------------------------------*/
+@media screen and (max-width:85.25em){
+	/*INDEX------------------------*/
+	#lower-bar{
+		padding-top:2.5rem;
+	}
+
+	#landing .main-grid-container{
+		padding-top:2rem;
+	}
+
+}
+
+
+/*Small Window (1200px)------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:75em){
+	/*INDEX---------------------------*/
+	#works .divider-line{
+		margin:0 7.5rem;
+	}
+}
+
+/*Inbetween (1180px)-----------------------------------------------------------------------------------*/
+@media screen and (max-width:73.75em){
+	/*GLOBAL========================*/
+	/*TYPOGRAPHY*/
+	h1{
+		font-size:3rem;
+	}
+
+	h3{
+		font-size:2rem;
+	}
+
+	h4{
+		font-size:1.5rem;
+	}
+
+	/*INDEX---------------------------*/
+	#works .divider-line{
+		margin:0 7.5rem;
+	}
+}
+
+
+/*Inbetween (1020px)-----------------------------------------------------------------------------------*/
+@media screen and (max-width:63.75em){
+	/*GLOBAL========================*/
+	/*FOOTER*/
+	.footer-container{
+		grid-template-columns: 1fr 0.5fr 1fr;
+	}
+
+	/*INDEX------------------------*/
+	.ethos{
+		grid-column:1/13;
+	}
+	#works .divider-line{
+		margin:0 6rem;
+	}
+}
+
+/*Inbetween (896px)------------------------------------------------------------------*/
+@media screen and (max-width:56em){
+	/*GLOBAL=========================*/
+	#landing .main-grid-container{
+		padding-top:4rem;
+	}
+
+	/*INDEX------------------------*/
+	#works .divider-line{
+		margin:0 4rem;
+	}
+}
+
+/*Inbetween (840px)------------------------------------------------------------------*/
+@media screen and (max-width:52.5em){
+	/*GLOBAL=========================*/
+	#landing .main-grid-container{
+		padding-top:3rem;
+	}
+
+	#landing .main-grid-container{
+		padding-top:1.75rem;
+	}
+}
+
+
+
+/* #Tablet Devices (768px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:48em){
+	/*GLOBAL========================*/
+	/*MAIN NAV*/
+	.nav-links{
+		display:none;
+	}
+
+	/*FOOTER*/
+	.footer-container{
+		grid-template-columns: 1fr 0.1fr 1fr;
+	}
+
+
+	/*INDEX------------------------*/
+	.work-pages-content{
+		grid-column:1/13;
+	}
+
+	.work-pages-images-container{
+		grid-column:1/13;
+	}
+
+	.main-grid-container.work{
+		padding-top:3rem;
+		padding-bottom:3rem;
+	}
+}
+
+/*Inbetween (660px)------------------------------------------------------------------*/
+@media screen and (max-width:41.25em){
+	/*GLOBAL==========================*/
+	/*TYPOGRAPHY*/
+	h1{
+		font-size:2.75rem;
+	}
+
+	.footer-container{
+		grid-template-columns:1fr 1fr;
+	}
+
+	.footer-social-media{
+		display:none;
+	}
+
+	.footer-social-media-mobile{
+		display:block;
+		grid-column:2/3;
+		justify-self:end;
+	}
+
+	.footer-third{
+		grid-column:1/4;
+		justify-self:start;
+	}
+
+}
+
+
+/*Inbetween (600px)------------------------------------------------------------------*/
+@media screen and (max-width:37.5em){
+	/*GLOBAL==========================*/
+	/*TYPOGRAPHY*/
+	h1{
+		font-size:2.5rem;
+	}
+
+	/*INDEX-----------------------------*/
+	#works .divider-line{
+		margin:0 2.5rem;
+	}
+}
+
+/*Inbetween (544px)------------------------------------------------------------------*/
+@media screen and (max-width:34em){
+	/*GLOBAL==========================*/
+	h1{
+		font-size:2.25rem;
+	}
+
+	/*INDEX----------------------------*/
+	.theme-buttons img{
+		width:20px;
+		height:20px;
+	}
+}
+
+
+
+
+/* #Mobile Devices (480px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:30em){
+	/*GLOBAL==========================*/
+	/*TYPOGRAPHY*/
+	h1{
+		font-size:2rem;
+	}
+	h3{
+		font-size:1.875rem;
+	}
+}
+
+/*Inbetween (440px)------------------------------------------------------------------*/
+@media screen and (max-width:27.5em){
+	/*INDEX--------------------------------*/
+
+}
+
+/*Inbetween (434px)------------------------------------------------------------------*/
+@media screen and (max-width:27.125em){
+	/*GLOBAL=================================*/
+	/*FOOTER*/
+	.footer-third{
+		grid-column:1/3;
+	}
+
+
+	/*INDEX--------------------------------*/
+	.ethos h1{
+		font-size:1.875rem;
+	}
+
+	#lower-bar{
+		grid-template-columns: 1.5fr 2.5fr 1fr;
+	}
+
+}
+
+/*Inbetween (400px)-----------------------------------------------------------------------*/
+@media screen and (max-width:25em){
+	/*INDEX---------------------------*/
+	#works .divider-line{
+		margin:0 1.75rem;
+	}
+}
+
+
+
+/*Inbetween (370px)------------------------------------------------------------------*/
+@media screen and (max-width:23.125em){
+	/*GLOBAL=====================================*/
+	/*FOOTER*/
+	.footer-header h5{
+		font-size:1.25rem;
+	}
+
+	.footer-container p{
+		font-size:0.875rem;
+	}
+
+
+
+	/*INDEX--------------------------------*/
+	.ethos h1{
+		font-size:1.75rem;
+	}
+
+	#works .divider-line{
+		margin:0 1rem;
+	}
+}
+
+/*Inbetween (360px)------------------------------------------------------------------*/
+@media screen and (max-width:22.5em){
+	/*GLOBAL==================================*/
+	/*HEADER*/
+	header{
+		padding:1.25rem 1.25rem;
+	}
+
+
+	/*FOOTER*/
+	.footer-container{
+		padding:2.5rem 1.25rem;
+	}
+
+	.resources-text{
+		flex-direction:column;
+	}
+
+	.creation-update-text{
+		padding-bottom:0.625rem;
+	}
+
+	.resources-text p{
+		padding-bottom:0.3125rem;
+	}
+
+
+	/*INDEX--------------------------------*/
+	#landing .main-grid-container{
+		margin:0 1.25rem 0 1.25rem;
+	}
+
+	.main-grid-container.work{
+		margin:0 1.25rem 0 1.25rem;
+	}
+
+	.progress-bar{
+		margin:0 1.25rem 0 1.25rem;
+	}
+
+	#works .divider-line{
+		margin:0 0.875rem;
+	}
+}
+
+

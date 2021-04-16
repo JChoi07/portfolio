@@ -53,6 +53,10 @@ p{
 	font-weight:400;
 }
 
+.footer-social-media-mobile{
+	display:none;
+}
+
 .footer-fineprint{
 	font-size:1rem;
 }
@@ -367,7 +371,7 @@ header a{
 	display:grid;
 	grid-template-columns: repeat(12,1fr);
 	grid-gap:1.25rem;
-	padding-top:4rem;
+	padding-top:5rem;
 }
 
 #work-preview h3{
