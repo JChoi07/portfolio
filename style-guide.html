@@ -24,10 +24,298 @@
 		</nav>
 	</header>
 
+	<div class="banner-wrapper">
+		<div class="banner">
+			<h1>My Style Guide</h1>
+			<p>The design elements that define my ethos (framework based off of Dipp'd Pattern Library)</p>
+		</div>
+	</div>
 
-	<div class="main-grid-container">
-		<div class="main-grid works">
-			<h1>Page under construction :(</h1>
+	<div class="main-grid-container style-guide">
+		<div class="main-grid">
+			<aside class="aside-menu">
+				<div class="sticky-element">
+					<h4>Index</h4>
+					<div class="index-links">
+						<a href="#colour-section"><h6 class="medium">Color</h6></a>
+						<a href="#typography-section"><h6 class="medium">Typography</h6></a>
+						<a href="#interactive-elements-section"><h6 class="medium">Interactive Elements</h6></a>
+					</div>
+				</div>
+			</aside>
+
+			<div class="main-section">
+				<section id="colour-section" class="style-guide-section">
+					<h4>Colour</h4>
+					<div class="divider-line"></div>
+					<div class="style-guide-paragraphs">
+						<p>Representing an open, energetic and creative nature, orange acts as the primary colour within the portfolio. In support are monchromatic variations of the hue and a split complimentary counterpart in blue.</p>
+					</div>
+
+					<div class="colour-swatch regular-orange">
+						<div class="colour-name">
+							<h6>Bright Orange</h6>
+							<p>#FF9425</p>
+						</div>
+						<div class="colour-description">
+							<p>Used for accenting and highlighting</p>
+						</div>
+					</div>
+					<div class="colour-swatch light-orange">
+						<div class="colour-name">
+							<h6 class="black-text">Light Orange</h6>
+							<p class="black-text">#FFBB73</p>
+						</div>
+						<div class="colour-description">
+							<p class="black-text">Lighter variation used for footer and dark mode</p>
+						</div>
+					</div>
+					<div class="colour-swatch blue">
+						<div class="colour-name">
+							<h6 class="white-text">Blue</h6>
+							<p class="white-text">#0D3FFF</p>
+						</div>
+						<div class="colour-description">
+							<p class="white-text">Used for links and underlining text in white spaces</p>
+						</div>
+					</div>
+					<div class="colour-swatch dark-mode-black">
+						<div class="colour-name">
+							<h6 class="white-text">Dark Mode Black</h6>
+							<p class="white-text">#373A36</p>
+						</div>
+						<div class="colour-description">
+							<p class="white-text">Lighter variation of black used for dark mode</p>
+						</div>
+					</div>
+					<div class="colour-swatch black">
+						<div class="colour-name">
+							<h6 class="white-text">Black</h6>
+							<p class="white-text">#000000</p>
+						</div>
+						<div class="colour-description">
+							<p class="white-text">Used for main text</p>
+						</div>
+					</div>
+					<div class="colour-swatch white">
+						<div class="colour-name">
+							<h6 class="black-text">White</h6>
+							<p class="black-text">#FFFFFF</p>
+						</div>
+						<div class="colour-description">
+							<p class="black-text">Used for the background and text in dark mode</p>
+						</div>
+					</div>
+				</section><!--  End of colour section -->
+
+				<section id="typography-section" class="style-guide-section">
+					<h4>Typography</h4>
+					<div class="divider-line"></div>
+					<div class="style-guide-paragraphs">
+						<p>Inter is the main typeface for this portfolio. Designed for the intention of web use, it’s large x-height provides clarity in communication while still reflecing a fun exterior with it’s rounded dots.</p>
+					</div>
+
+					<div class="headers">
+						<h5>Headers</h5>
+						<h1>This is the H1 Header (64px)</h1>
+						<div class="code-snippet">
+							<div class="html-code">
+								<p>HTML Code</p>
+								<pre><code>&lt;h1&gt;H1 Heading&lt;/h1&gt;
+								</code></pre>
+							</div>
+							<div class="css-code">
+								<p>CSS Code</p>
+								<pre><code>h1&lcub;
+									font-size:3.5rem;font-weight: 700;
+								&rcub;
+								</code></pre>
+							</div>
+						</div>
+
+						<h2>This is the H2 Header (48px)</h2>
+						<div class="code-snippet">
+							<div class="html-code">
+								<p>HTML Code</p>
+								<pre><code>&lt;h2&gt;H2 Heading&lt;/h2&gt;
+								</code></pre>
+							</div>
+							<div class="css-code">
+								<p>CSS Code</p>
+								<pre><code>h2&lcub;
+									font-size:3rem;
+									font-weight:600;
+								&rcub;
+								</code></pre>
+							</div>
+						</div>
+
+						<h3>This is the H3 Header (36px)</h3>
+						<div class="code-snippet">
+							<div class="html-code">
+								<p>HTML Code</p>
+								<pre><code>&lt;h3&gt;H3 Heading&lt;/h3&gt;
+								</code></pre>
+							</div>
+							<div class="css-code">
+								<p>CSS Code</p>
+								<pre><code>h3&lcub;
+									font-size:2.25rem;
+									font-weight:600;
+								&rcub;
+								</code></pre>
+							</div>
+						</div>
+
+						<h4>This is the H4 Header (30px)</h4>
+						<div class="code-snippet">
+							<div class="html-code">
+								<p>HTML Code</p>
+								<pre><code>&lt;h4&gt;H4 Heading&lt;/h4&gt;
+								</code></pre>
+							</div>
+							<div class="css-code">
+								<p>CSS Code</p>
+								<pre><code>h4&lcub;
+									font-size:1.875rem;
+									font-weight:600;
+								&rcub;
+								</code></pre>
+							</div>
+						</div>
+
+						<h5>This is the H5 Header (24px)</h5>
+						<div class="code-snippet">
+							<div class="html-code">
+								<p>HTML Code</p>
+								<pre><code>&lt;h5&gt;H5 Heading&lt;/h5&gt;
+								</code></pre>
+							</div>
+							<div class="css-code">
+								<p>CSS Code</p>
+								<pre><code>h5&lcub;
+									font-size:1.5rem;
+									font-weight:600;
+								&rcub;
+								</code></pre>
+							</div>
+						</div>
+
+						<h6>This is the H6 Header (20px)</h6>
+						<div class="code-snippet">
+							<div class="html-code">
+								<p>HTML Code</p>
+								<pre><code>&lt;h6&gt;H6 Heading&lt;/h6&gt;
+								</code></pre>
+							</div>
+							<div class="css-code">
+								<p>CSS Code</p>
+								<pre><code>h6&lcub;
+									font-size:1.25rem;
+								&rcub;
+								</code></pre>
+							</div>
+						</div>
+					</div> <!-- End of headers class -->
+
+					<div class="paragraphs">
+						<h5>Paragraph</h5>
+						<p>This is the paragraph (16px)</p>
+						<div class="code-snippet">
+							<div class="html-code">
+								<p>HTML Code</p>
+								<pre><code>&lt;p&gt;This is the paragraph&lt;/p&gt;
+								</code></pre>
+							</div>
+							<div class="css-code">
+								<p>CSS Code</p>
+								<pre><code>p&lcub;
+									font-size:1rem;
+									font-weight:400;
+								&rcub;
+								</code></pre>
+							</div>
+						</div>
+					</div> <!-- End of paragraphs class -->
+
+					<div class="image-annotations">
+						<h5>Image Annotations</h5>
+						<p>This is the image annotation (14px)</p>
+						<div class="code-snippet">
+							<div class="html-code">
+								<p>HTML Code</p>
+								<pre><code>&lt;p&gt;This is the image annotation&lt;/p&gt;
+								</code></pre>
+							</div>
+							<div class="css-code">
+								<p>CSS Code</p>
+								<pre><code>annotations&lcub;
+									font-size:0.875rem;
+									font-weight:500;
+								&rcub;
+								</code></pre>
+							</div>
+						</div>
+					</div> <!-- End of image annotations class -->
+				</section> <!-- End of typography section -->
+
+				<section id="interactive-elements-section" class="style-guide-section">
+					<h4>Interactive Elements</h4>
+					<div class="divider-line"></div>
+					<h5>Down Arrow</h5>
+					<div class="style-guide-paragraphs">
+						<p>Used to indicate scrolling on the landing page and navigate to the works section.</p>
+					</div>
+					<div class="scroll-indicator-example">
+						<a href="#0"><img src="img/down-arrow.png" width="49" height="26" alt="An image of a down arrow indicating scrolling"></a>
+					</div>
+					<div class="code-snippet">
+						<div class="html-code">
+							<p>HTML Code</p>
+							<pre><code>&lt;div class="scroll-indicator"&gt;
+								&lt;a href="#works"&gt;&lt;img src="img/down-arrow.png" width="49" height="26" alt="An image of a down arrow indicating scrolling"&gt;&lt;/a&gt;
+							&lt;/div&gt;
+							</code></pre>
+						</div>
+						<div class="css-code">
+							<p>CSS Code</p>
+							<pre><code>.scroll-indicator&lcub;
+								grid-column: 2/3;
+								justify-self: center;
+							&rcub;
+							</code></pre>
+						</div>
+					</div>
+
+					<h5>Light/Dark Mode Buttons</h5>
+					<div class="style-guide-paragraphs">
+						<p>Used to give the option for users to toggle between dark and light mode for their preferred viewing experience.</p>
+					</div>
+					<div class="theme-buttons-example">
+						<div class="button light-mode"><img src="img/light-mode-sun-small.png" width="30" height="30" alt="An image of a moon icon"></div>
+						<div class="button dark-mode"><img src="img/dark-mode-moon-small.png" width="29" height="30" alt="An image of a moon icon"></div>
+					</div>
+					<div class="code-snippet">
+						<div class="html-code">
+							<p>HTML Code</p>
+							<pre><code>&lt;div class="theme-buttons-example"&gt;
+								&lt;div class="button light-mode"&gt;&lt;img src="img/light-mode-sun-small.png" width="30" height="30" alt="An image of a moon icon"&gt;&lt;/div&gt;
+								&lt;div class="button dark-mode"&gt;&lt;img src="img/dark-mode-moon-small.png" width="29" height="30" alt="An image of a moon icon"&gt;&lt;/div&gt;
+							&lt;/div&gt;
+							</code></pre>
+						</div>
+						<div class="css-code">
+							<p>CSS Code</p>
+							<pre><code>.theme-buttons&lcub;
+								grid-column: 3/4;
+								display:flex;
+								justify-content: flex-end;
+							&rcub;
+							</code></pre>
+						</div>
+					</div>
+				</section> <!-- End of interactive elements section -->
+			</div>
 		</div> <!-- End of main grid -->
 	</div> <!-- End of main-grid container -->
 
@@ -47,14 +335,14 @@
 				</div>
 			</div>
 
+			<div class="footer-social-media-mobile">
+				<a href="https://www.instagram.com/jonathan_choi17/" target="_blank"><img src="img/instagram-icon.png" width="24" height="24" alt="An image of the instagram icon"></a>
+				<a href="https://www.linkedin.com/in/jonathan-choi-345033190/" target="_blank"><img src="img/linkedin-icon.png" width="24" height="24" alt="An image of the linkedin icon"></a>
+			</div>
+
 			<div class="footer-third">
 				<div class="creation-update-text">
 					<p class="footer-fineprint">Created and coded with magic:</p>
-				</div>
-
-				<div class="footer-social-media-mobile">
-					<a href="https://www.instagram.com/jonathan_choi17/" target="_blank"><img src="img/instagram-icon.png" width="24" height="24" alt="An image of the instagram icon"></a>
-					<a href="https://www.linkedin.com/in/jonathan-choi-345033190/" target="_blank"><img src="img/linkedin-icon.png" width="24" height="24" alt="An image of the linkedin icon"></a>
 				</div>
 
 				<div class="resources-text">

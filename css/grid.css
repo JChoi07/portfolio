@@ -48,7 +48,7 @@
 }
 
 .main-grid.works{
-	padding:0 7.5rem;
+	padding:0 9rem;
 }
 
 /*comment test*/
@@ -65,6 +65,10 @@
 	#landing .main-grid-container{
 		padding-top:2rem;
 		padding-bottom:2rem;
+	}
+
+	.banner-wrapper{
+		padding-top:2rem;
 	}
 }
 
@@ -268,6 +272,47 @@
 
 	.example-video.dippd-mobile{
 		grid-column:4/10;
+	}
+
+	/*STYLE GUIDE-----------------------------------------------------*/
+	.aside-menu{
+		grid-column:1/13;
+		position:sticky;
+		top:0;
+		background:white;
+	}
+
+	.sticky-element h4{
+		margin-bottom:0;
+	}
+
+	.index-links{
+		display:flex;
+		justify-content: flex-start;
+	}
+
+	.index-links h6{
+		margin-top:0rem;
+		margin-bottom: 0rem;
+		padding-top:0.625rem;
+		padding-bottom:1.25rem;
+		padding-right:1.25rem;
+	}
+
+	.main-section{
+		grid-column:1/13;
+	}
+
+	.style-guide-paragraphs{
+		margin-right:0;
+	}
+
+	/*REFERENCES-----------------------------*/
+	#coding-references{
+		grid-column:1/13;
+	}
+	#image-icons-references{
+		grid-column:1/13;
 	}
 }
 
@@ -539,6 +584,15 @@
 
 	.main-grid.works{
 		padding:0 2rem;
+	}
+
+	/*STYLE GUIDE-----------------------*/
+	.main-grid-container.style-guide, .main-grid-container.references, .banner{
+		margin:0 1.25rem 0 1.25rem;
+	}
+
+	#coding-references ul, #image-icons-references ul{
+		padding-left:1.25rem;
 	}
 }
 

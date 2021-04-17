@@ -1,3 +1,31 @@
+/*TABLE OF CONTENTS (MAIN PAGE SECTIONS)
+Control F to these sections:
+- GLOBAL
+	- Typography
+	- Color Swatches
+	- Buttons
+	- Navigation Bar
+	- Divider Line
+	- Footer
+- INDEX
+	- Landing Page
+	- Works Sections
+- WORKS PAGE (VENTURA FUTURE)
+	- Work Preview Section
+	- Graphic Assets
+	- Microsite Assets
+	- Final Thoughts and Index
+- WORKS PAGE (DIPP'D DONUTS)
+	- Work Preview Section
+	- Research Gatherings
+	- Brand Iterations
+	- Implementing the Design
+	- Final Video Assets
+- THIS IS ME (ABOUT PAGE)
+- STYLE GUIDE
+*/
+
+
 /*GLOBAL========================================================================*/
 *{
 	box-sizing: border-box;
@@ -9,6 +37,16 @@ html{
 
 a{
 	color:#0D3FFF;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#0D3FFF;
+	text-decoration:underline;
+}
+
+pre{
+	white-space: pre-line;
 }
 
 /*TYPOGRAPHY-----------------------------------------------------------------------*/
@@ -67,6 +105,11 @@ p{
 	/*font-style:italic;*/
 }
 
+.semi-bold-orange-text{
+	font-weight:600;
+	color:#FF9425;
+}
+
 .semi-bold{
 	font-weight:600;
 }
@@ -90,6 +133,10 @@ p{
 	background:#FFBB73;
 }
 
+.blue{
+	background:#0D3FFF;
+}
+
 .dark-mode-black{
 	background:#373A36;
 }
@@ -102,8 +149,24 @@ p{
 	color:#FFBB73;
 }
 
+.blue-text{
+	color:#0D3FFF;
+}
+
+.black{
+	background:black;
+}
+
 .white{
 	background:white;
+}
+
+.black-text{
+	color:black;
+}
+
+.white-text{
+	color:white;
 }
 
 /*BUTTONS------------------------------------------------------------------------------------------*/
@@ -132,6 +195,14 @@ header{
 
 header a{
 	text-decoration: none;
+}
+
+header a:hover{
+	text-decoration-thickness:3px;
+}
+
+.nav-logo a:hover{
+	text-decoration:none;
 }
 
 .nav-logo h6{
@@ -212,7 +283,11 @@ header a{
 
 .resources-text a{
 	/*color:#0D3FFF;*/
-	text-decoration: underline;
+}
+
+.resources-text a:hover{
+	/*color:#0D3FFF;*/
+	text-decoration:underline;
 	text-decoration-thickness: 1px;
 }
 
@@ -278,6 +353,7 @@ header a{
 .scroll-indicator{
 	grid-column: 2/3;
 	justify-self: center;
+	transition:transform .2s;
 }
 
 .theme-buttons{
@@ -453,7 +529,7 @@ header a{
 }
 
 .graphical-experimentation-image{
-	grid-column:3/11;
+	grid-column:2/12;
 }
 
 .final-graphic-assets-header{
@@ -562,11 +638,31 @@ header a{
 
 /*RESEARCH GATHERINGS-----------------------------------------------------------------*/
 .client-goals{
-	grid-column:1/7;
+	grid-column:1/13;
 }
 
 .user-goals{
-	grid-column:7/13;
+	grid-column:1/13;
+}
+
+/*Image Modal*/
+.image-modal-wrapper{
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	background:rgb(0,0,0, .5);
+}
+
+.image-modal{
+	margin:auto;
+	position:absolute;
+	width:50%;
+	margin:10%;
+
 }
 
 
@@ -580,7 +676,7 @@ header a{
 }
 
 .moodboard-image-2{
-	grid-column:6/13;
+	grid-column:1/13;
 }
 
 
@@ -640,3 +736,201 @@ header a{
 .extra-info-2{
 	grid-column:5/8;
 }
+
+
+/*STYLE GUIDE========================================================================================*/
+.main-grid-container.style-guide{
+	padding-top:0;
+}
+
+.style-guide-section{
+	padding-bottom:2.5rem;
+}
+
+/*BANNER----------------------*/
+.banner-wrapper{
+	display:flex;
+	padding-top:6.25rem;
+	padding-bottom:4rem;
+}
+
+.banner{
+	width: clamp(18.75rem,75%,100rem);
+	margin:0 auto;
+}
+
+.banner h1{
+	margin-bottom:0;
+}
+
+/*MAIN CONTENT---------------------*/
+/*Aside Menu*/
+.aside-menu{
+	grid-column:1/4;
+}
+
+.sticky-element{
+	position:sticky;
+	top:2.5rem;
+}
+
+
+.aside-menu h6{
+	margin-top:1.25rem;
+	margin-bottom:0;
+}
+
+.aside-menu a{
+	text-decoration:none;
+	color:#0D3FFF;
+}
+
+.aside-menu a:hover{
+	text-decoration: underline;
+}
+
+.aside-menu h6{
+	margin-top:1.25rem;
+	margin-bottom:0;
+}
+
+/*Main Section*/
+.main-section{
+	grid-column:4/13;
+	/*display:grid;*/
+}
+
+.main-section h4{
+	margin-bottom: 0;
+}
+
+.main-section h5{
+	margin-bottom: 1.25rem;
+}
+
+.main-section .divider-line{
+	width:100%;
+	margin-bottom:1.5rem;
+}
+
+.style-guide-paragraphs{
+	margin-right:30%;
+}
+
+/*Colours*/
+.colour-swatch{
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom:1.25rem;
+}
+
+.colour-swatch.regular-orange{
+	margin-top:2.5rem;
+}
+
+.colour-name{
+	grid-column:1/2;
+	padding:2.5rem 1.25rem;
+}
+
+.colour-name h6{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.colour-name p{
+	margin-top:0.3125rem;
+	margin-bottom:0;
+}
+
+.colour-description{
+	grid-column:2/3;
+	padding:2.5rem 1.25rem;
+	justify-self:end;
+}
+
+.colour-description p{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.colour-swatch.white{
+	border:1px solid black;
+}
+
+/*Typography*/
+.headers, .paragraphs, .image-annotations{
+	padding-bottom: 2.5rem
+}
+
+/*Interactive Elements*/
+.scroll-indicator-example{
+	display:flex;
+	padding-top:1.25rem;
+	padding-bottom:1.25rem;
+}
+
+.theme-buttons-example{
+	display:flex;
+	justify-content: flex-start;
+	padding-top:1.25rem;
+	padding-bottom:1.25rem;
+}
+
+#interactive-elements-section{
+	padding-bottom: 6.25rem;
+}
+
+/*Code Portion*/
+.code-snippet{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:1.25rem;
+}
+
+.html-code{
+	grid-column:1/2;
+}
+
+.css-code{
+	grid-column:2/3;
+}
+
+
+/*REFERENCES===============================================*/
+.banner-wrapper.references{
+	padding-bottom:2.5rem;
+}
+
+.main-grid-container.references{
+	padding-top:0;
+}
+
+#coding-references{
+	grid-column:1/8;
+}
+
+#coding-references h4{
+	grid-column:1/8;
+	margin-top:0;
+	margin-bottom:1.25rem;
+}
+
+#coding-references ul, #image-icons-references ul{
+	padding-left:0;
+}
+
+#image-icons-references{
+	grid-column:1/8;
+	padding-bottom:10rem;
+}
+
+
+#image-icons-references h4{
+	margin-bottom:1.25rem
+}
+
+
+
+
+
