@@ -412,6 +412,12 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	/*WORKS----------------------------*/
+	.work-preview-number{
+		top:6rem;
+		left:1.875rem;
+	}
 }
 
 
@@ -438,7 +444,7 @@
 	}
 
 	.work-preview-number{
-		top:4.5rem;
+		top:5rem;
 		left:1.875rem;
 	}
 
@@ -586,7 +592,7 @@
 	}
 
 	.work-preview-number{
-		top:4.5rem;
+		top:5.25rem;
 		left:1.25rem;
 	}
 
