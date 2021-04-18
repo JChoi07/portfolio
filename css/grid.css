@@ -206,12 +206,6 @@
 
 /* #Tablet Devices (768px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:48em){
-	/*GLOBAL========================*/
-	/*MAIN NAV*/
-	.nav-links{
-		display:none;
-	}
-
 	/*FOOTER*/
 	.footer-container{
 		grid-template-columns: 1fr 0.1fr 1fr;
@@ -275,16 +269,16 @@
 	}
 
 	/*STYLE GUIDE-----------------------------------------------------*/
-	.aside-menu{
+	/*.aside-menu{
 		grid-column:1/13;
 		position:sticky;
-		top:0;
+		top:0rem;
 		background:white;
 	}
 
 	.sticky-element h4{
 		margin-bottom:0;
-	}
+	}*/
 
 	.index-links{
 		display:flex;
@@ -405,6 +399,20 @@
 	}
 }
 
+/*Inbetween (512px)-------------------------------------------------------*/
+@media screen and (max-width:32em){
+	/*GLOBAL========================*/
+	/*MAIN NAV*/
+	.nav-links{
+		display:none;
+	}
+
+	.hamburger-button{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
 
 
 

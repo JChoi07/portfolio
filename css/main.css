@@ -1,3 +1,7 @@
+/*REFERENCES (Also found in the code)
+- Hamburger menu reference: https://www.youtube.com/watch?v=dIyVTjJAkLw&t=24s*/
+
+
 /*TABLE OF CONTENTS (MAIN PAGE SECTIONS)
 Control F to these sections:
 - GLOBAL
@@ -183,14 +187,15 @@ p{
 
 /*NAVIGATION BAR---------------------------------------------------------------------------------*/
 header{
-	/*position:sticky;
+	position:sticky;
 	top:0;
-	height:0;
-	z-index:999;*/
+	z-index:1000;
 	display:flex;
 	justify-content: space-between;
+	align-items: center;
 	padding:1.25rem 1.875rem;
 	background:white;
+	transition:top 0.3s;
 }
 
 header a{
@@ -224,6 +229,156 @@ header a:hover{
 .link-one{
 	padding-right:2.5rem	;
 }
+
+
+/***Hamburger Menu***/
+/*- Hamburger menu reference: https://www.youtube.com/watch?v=dIyVTjJAkLw&t=24s*/
+
+.hamburger-button{
+	display:none;
+	position:relative;
+	width:45px;
+	height:40px;
+	cursor:pointer;
+	transition:all .3s ease-in-out;
+	/*border:3px solid black*/
+}
+
+.hamburger-icon{
+	width:45px;
+	height:2px;
+	transition:all .3s ease-in-out;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+	content:'';
+	position:absolute;
+	width:45px;
+	height:2px;
+	transition:all .3s ease-in-out;
+	background:black;
+}
+
+.hamburger-icon::before{
+	transform:translateY(-10px);
+}
+
+.hamburger-icon::after{
+	transform:translateY(10px);
+}
+
+/*Hamburger Animation*/
+.hamburger-button.open .hamburger-icon{
+	transform:translate(-10px);
+	background:transparent;
+}
+
+.hamburger-button.open .hamburger-icon::before{
+	transform: rotate(45deg) translate(8px, -8px)
+}
+
+.hamburger-button.open .hamburger-icon::after{
+	transform: rotate(-45deg) translate(8px, 8px)
+}
+
+/***Dropdown***/
+#dropdown{
+	position:absolute;
+	top:78px;
+	z-index:100;
+	width:100%;
+	display:none;
+}
+
+#dropdown.active{
+	display:block;
+}
+
+.dropdown-menu{
+	position:fixed;
+	width:100%;
+	z-index:999;
+}
+
+#dropdown .divider-line{
+	width:100%;
+	margin-top:0.313rem;
+	margin-bottom:0.313rem;
+}
+
+#dropdown h6{
+	margin:0;
+	padding-top:1rem;
+	padding-bottom:1rem;
+	padding-right:1.875rem;
+}
+
+.nav-wrapper{
+	display: flex;
+	justify-content: flex-end;
+	text-align:right;
+}
+
+.dropdown-nav-links a{
+	color:black;
+	text-align:right;
+}
+
+/*dropdown animation*/
+.dropdown-menu.open{
+	animation:dropdownOpen 300ms ease-in forwards;
+}
+
+.dropdown-menu.close{
+	animation:dropdownClose 300ms ease-out forwards;
+}
+
+@keyframes dropdownWrapper{
+	0%{
+		/*transform:scale(0);*/
+		transform:translateY(-600px);
+	}
+	80%{
+		/*transform:scale(1.1);*/
+	}
+	100%{
+		/*transform:scale(1);*/
+		transform:translateY(0);
+	}
+}
+
+
+@keyframes dropdownOpen{
+	0%{
+		/*transform:scale(0);*/
+		transform:translateY(-600px);
+	}
+	80%{
+		/*transform:scale(1.1);*/
+	}
+	100%{
+		/*transform:scale(1);*/
+		transform:translateY(0);
+	}
+}
+
+@keyframes dropdownClose{
+	0%{
+		/*transform:scale(0);*/
+		transform:translateY(0px);
+	}
+	80%{
+		/*transform:scale(1.1);*/
+	}
+	100%{
+		/*transform:scale(1);*/
+		transform:translateY(-600px);
+	}
+}
+
+
+
 
 /*DIVIDER LINE--------------------------------------------------------------------------------------*/
 .divider-line{
@@ -771,7 +926,7 @@ header a:hover{
 
 .sticky-element{
 	position:sticky;
-	top:2.5rem;
+	top:6.25rem;
 }
 
 
