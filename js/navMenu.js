@@ -1,4 +1,4 @@
-// REFERENCES (Also found inline)
+// REFERENCES (Also found in the code)
 // - Retractable nav source: https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
 

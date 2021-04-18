@@ -200,6 +200,25 @@
 	/*.text-section{
 		grid-column: 1/13;
 	}*/
+
+	.graphical-experimentation-image, .final-graphic-assets-img1, .final-graphic-assets-img2, .final-graphic-assets-img3,
+	.example-gif, .example-image, .microsite-example.works-grid .example-video{
+		grid-column:1/13;
+	}
+
+	.exmaple-information{
+		grid-column:1/13;
+		grid-row:1/2;
+	}
+
+	.example-video.dippd-desktop{
+		grid-column:1/13;
+		grid-row:16/17;
+	}
+
+	.example-video.dippd-mobile{
+		grid-column:4/10;
+	}
 }
 
 
@@ -245,27 +264,8 @@
 		display:flex;
 	}
 
-	.graphical-experimentation-image, .final-graphic-assets-img1, .final-graphic-assets-img2, .final-graphic-assets-img3,
-	.example-gif, .example-image{
-		grid-column:1/13;
-	}
-
-	.exmaple-information{
-		grid-column:1/13;
-		grid-row:1/2;
-	}
-
 	.client-goals, .user-goals, .moodboard-image-1, .moodboard-image-2{
 		grid-column:1/13;
-	}
-
-	.example-video.dippd-desktop{
-		grid-column:1/13;
-		grid-row:14/15;
-	}
-
-	.example-video.dippd-mobile{
-		grid-column:4/10;
 	}
 
 	/*STYLE GUIDE-----------------------------------------------------*/
