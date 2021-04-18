@@ -245,7 +245,7 @@ header a:hover{
 }
 
 .hamburger-icon{
-	width:45px;
+	width:40px;
 	height:2px;
 	transition:all .3s ease-in-out;
 }
@@ -254,7 +254,7 @@ header a:hover{
 .hamburger-icon::after {
 	content:'';
 	position:absolute;
-	width:45px;
+	width:40px;
 	height:2px;
 	transition:all .3s ease-in-out;
 	background:black;
@@ -305,6 +305,10 @@ header a:hover{
 	width:100%;
 	margin-top:0.313rem;
 	margin-bottom:0.313rem;
+}
+
+#dropdown .divider-line.bottom-line{
+	margin-bottom:0;
 }
 
 #dropdown h6{
