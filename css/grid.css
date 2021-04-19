@@ -73,7 +73,7 @@
 	}
 
 	#landing .main-grid-container{
-		padding-top:1rem;
+		padding-top:0;
 		padding-bottom:2rem;
 	}
 
@@ -176,7 +176,7 @@
 @media screen and (max-width:56em){
 	/*GLOBAL=========================*/
 	#landing .main-grid-container{
-		padding-top:4rem;
+		padding-top:0;
 	}
 
 	/*INDEX------------------------*/
