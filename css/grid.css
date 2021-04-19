@@ -55,6 +55,16 @@
 
 
 /*MEDIA QUERIES========================================================================================*/
+/*Inbetween (1500px)--------------------------------------------------------------------------------------*/
+@media screen and (max-width:93.75em){
+	/*INDEX------------------------*/
+	#landing .main-grid-container{
+		padding-top:1rem;
+		padding-bottom:2rem;
+	}
+}
+
+
 /*Inbetween (1364px)--------------------------------------------------------------------------------------*/
 @media screen and (max-width:85.25em){
 	/*INDEX------------------------*/
@@ -63,7 +73,7 @@
 	}
 
 	#landing .main-grid-container{
-		padding-top:1rem;
+		padding-top:2rem;
 		padding-bottom:2rem;
 	}
 
