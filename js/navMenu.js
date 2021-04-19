@@ -20,7 +20,7 @@ let dropdownBreakpoint = window.matchMedia("(min-width: 513px)");
 
 let lastScrollPos = window.pageYOffset;
 let navBar = document.querySelector("#nav-header");
-navBar.setAttribute('aria-scroll', 'false');
+navBar.setAttribute('aria-scroll-minimize', 'false');
 
 
 // Functions and Interactive Script---------------------------------------
@@ -106,11 +106,11 @@ window.onscroll=function() {
 	let currentScrollPos = window.pageYOffset;
 	if (lastScrollPos > currentScrollPos){
 		navBar.style.top = "0";
-		navBar.setAttribute('aria-scroll', 'false');
+		navBar.setAttribute('aria-scroll-minimize', 'false');
 	}
 	else if (hamburgerActive==false){
 		navBar.style.top = "-100px";
-		navBar.setAttribute('aria-scroll', 'true');
+		navBar.setAttribute('aria-scroll-minimize', 'true');
 	}
 	lastScrollPos = currentScrollPos;
 }
