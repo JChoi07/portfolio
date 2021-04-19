@@ -217,7 +217,7 @@ p{
 header{
 	position:sticky;
 	top:0;
-	z-index:1000;
+	z-index:1200;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
@@ -322,7 +322,7 @@ header a:hover{
 #dropdown{
 	position:absolute;
 	top:78px;
-	z-index:1500;
+	z-index:1199;
 	width:100%;
 	display:none;
 	background:var(--bg-color);
@@ -335,7 +335,7 @@ header a:hover{
 .dropdown-menu{
 	position:fixed;
 	width:100%;
-	z-index:1500;
+	z-index:1198;
 	background:var(--bg-color);
 }
 
