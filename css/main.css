@@ -689,7 +689,7 @@ header a:hover{
 .work-preview-image img{
 	width:100%;
 	height:auto;
-	filter:brightness(25%);
+	filter:brightness(45%);
 }
 
 .work-preview-content{
