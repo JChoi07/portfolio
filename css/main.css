@@ -52,7 +52,7 @@ Control F to these sections:
 [data-theme="dark"]{
 	--primary-color:#FF9425;
 	--secondary-color:#FFBB73;
-	--tertiary-color:#0D3FFF;
+	--tertiary-color:#26C5FF;
 	--font-color:white;
 	--bg-color:#373A36;
 	--heading-color:white;
@@ -72,12 +72,12 @@ html{
 }
 
 a{
-	color:#0D3FFF;
+	color:var(--tertiary-color);
 	text-decoration:none;
 }
 
 a:hover{
-	color:#0D3FFF;
+	color:var(--tertiary-color);
 	text-decoration:underline;
 }
 
@@ -167,6 +167,10 @@ p{
 	background:#0D3FFF;
 }
 
+.light-blue{
+	background:#26C5FF;
+}
+
 .dark-mode-black{
 	background:#373A36;
 }
@@ -233,6 +237,7 @@ header a{
 }
 
 header a:hover{
+	text-decoration-color:var(--tertiary-color);
 	text-decoration-thickness:3px;
 }
 
@@ -1013,7 +1018,7 @@ header a:hover{
 
 .aside-menu a{
 	text-decoration:none;
-	color:#0D3FFF;
+	color:var(--tertiary-color);
 }
 
 .aside-menu a:hover{
