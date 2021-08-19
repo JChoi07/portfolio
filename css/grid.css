@@ -64,7 +64,7 @@
 
 	/*test change*/
 	#landing .main-grid-container{
-		padding-top:1rem;
+		padding-top:3rem;
 		padding-bottom:1rem;
 	}
 
@@ -153,6 +153,11 @@
 		margin:0 6rem;
 	}
 
+	#landing .main-grid-container{
+		padding-top:3rem;
+		padding-bottom:1rem;
+	}
+
 	/*ABOUT ME PAGE------------------*/
 	.about-me-left-side{
 		grid-column:1/13;
@@ -167,7 +172,7 @@
 @media screen and (max-width:56em){
 	/*GLOBAL=========================*/
 	#landing .main-grid-container{
-		padding-top:0;
+		/*padding-top:0;*/
 	}
 
 	/*INDEX------------------------*/
@@ -214,7 +219,7 @@
 
 	.example-video.dippd-desktop{
 		grid-column:1/13;
-		grid-row:16/17;
+		grid-row:17/18;
 	}
 
 	.example-video.dippd-mobile{
@@ -364,7 +369,7 @@
 	}
 
 	#landing .main-grid-container{
-		padding-top:4rem;
+		padding-top:3rem;
 		padding-bottom:3rem;
 	}
 }
@@ -418,6 +423,15 @@
 	.work-preview-number{
 		top:6rem;
 		left:1.875rem;
+	}
+}
+
+/*Inbetween (487px)-------------------------------------------------------*/
+@media screen and (max-width:30.438em){
+	/*GLOBAL========================*/
+	/*INDEX-------------------------------*/
+	#landing .main-grid-container{
+		padding-top:0rem;
 	}
 }
 
@@ -502,7 +516,7 @@
 	}
 
 	#landing .main-grid-container{
-		padding-bottom:5rem;
+		/*padding-bottom:5rem;*/
 	}
 
 	/*WORKS----------------------------*/

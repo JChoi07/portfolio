@@ -85,6 +85,14 @@ pre{
 	white-space: pre-line;
 }
 
+figure{
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+
 /*TYPOGRAPHY-----------------------------------------------------------------------*/
 h1{
 	font-size:3.5rem;
@@ -150,6 +158,11 @@ p{
 
 .non-bold{
 	font-weight:400;
+}
+
+.img-caption{
+	text-align: center;
+	font-size: 0.875rem;
 }
 
 
@@ -751,7 +764,7 @@ header a:hover{
 }
 
 .graphical-experimentation-image{
-	grid-column:2/12;
+	grid-column:1/13;
 }
 
 .final-graphic-assets-header{
@@ -767,7 +780,7 @@ header a:hover{
 }
 
 .final-graphic-assets-img3{
-	grid-column: 4/10;
+	grid-column: 1/13;
 }
 
 /*MICROSITE ASSETS------------------------------------------------------------------------------------*/
@@ -861,11 +874,11 @@ header a:hover{
 
 /*RESEARCH GATHERINGS-----------------------------------------------------------------*/
 .client-goals{
-	grid-column:2/12;
+	grid-column:1/12;
 }
 
 .user-goals{
-	grid-column:2/12;
+	grid-column:1/12;
 }
 
 /*Image Modal*/
@@ -922,6 +935,10 @@ header a:hover{
 .microsite-example.works-grid .example-video{
 	grid-column:1/8;
 	padding-bottom:0;
+}
+
+.video-border{
+	border: 1px solid black;
 }
 
 /*FINAL VIDEO ASSETS-------------------------------------------------------------------------*/
