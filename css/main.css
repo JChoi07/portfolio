@@ -11,6 +11,7 @@ Control F to these sections:
 	- Navigation Bar
 	- Divider Line
 	- Footer
+	- Image Stuff
 - INDEX
 	- Landing Page
 	- Works Sections
@@ -25,6 +26,8 @@ Control F to these sections:
 	- Brand Iterations
 	- Implementing the Design
 	- Final Video Assets
+- WORKS PAGE (TWITCH)
+	- Brand and User Research
 - ABOUT ME
 - STYLE GUIDE
 - REFERENCES
@@ -164,7 +167,6 @@ p{
 	text-align: center;
 	font-size: 0.875rem;
 }
-
 
 /*COLOR SWATCHES---------------------------------------------------------------------------------------------*/
 .regular-orange{
@@ -523,6 +525,16 @@ header a:hover{
 	margin-top:0;
 }
 
+/*IMAGE STUFF-------------------------------------------------------------------------------------*/
+.full-span-image{
+	grid-column: 1/13;
+}
+
+.black-border{
+	border:  1px solid black;
+}
+
+
 /*INDEX PAGE===================================================================================*/
 
 /*LANDING PAGE-------------------------------------------------------------------------------------*/
@@ -800,11 +812,17 @@ header a:hover{
 	font-weight:600;
 }
 
+.works-subheader-no-margin-top{
+	margin-top: 0rem;
+	margin-bottom:1.25rem;
+	font-weight:600;
+}
+
 .example-gif{
 	grid-column: 1/8;
 }
 
-.exmaple-information{
+.example-information{
 	grid-column: 8/13;
 }
 
@@ -920,6 +938,11 @@ header a:hover{
 	grid-column: 1/8;
 }
 
+.microsite-example.works-grid.twitch .example-image{
+	grid-column:1/7;
+	padding-bottom:0;
+}
+
 /*DEVELOPING THE DESIGN----------------------------------------------------------------------*/
 #developing-design{
 	padding-top:2.5rem;
@@ -936,6 +959,18 @@ header a:hover{
 	grid-column:1/8;
 	padding-bottom:0;
 }
+
+.microsite-example.works-grid.twitch .example-video{
+	grid-column:1/7;
+	padding-bottom:0;
+}
+
+.microsite-example.works-grid.twitch .example-information{
+	grid-column:7/13;
+	padding-bottom:0;
+}
+
+
 
 .video-border{
 	border: 1px solid black;
@@ -1152,6 +1187,59 @@ header a:hover{
 .css-code{
 	grid-column:2/3;
 }
+
+
+/*WORKS PAGE (TWITCH)=======================*/
+/*Brand and User Research*/
+#questions-grid{
+	grid-column:1/13;
+	display:grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-row:auto;
+	padding-top:2.5rem;
+	padding-bottom:5rem;
+}
+
+.questions-header{
+	grid-column:1/5;
+	display:flex;
+}
+
+.questions-title{
+	margin-bottom:0;
+}
+
+.question{
+	grid-column:5/13;
+	display:flex;
+}
+
+.questions-name{
+	padding-left:0.5rem;
+	margin-bottom:1.25rem;
+}
+
+.question-end{
+	grid-column: 5/13;
+	padding-left: 0.5rem;
+	justify-self: start;
+}
+
+.question-quote{
+	font-size: 1rem;
+	margin-top: 0rem;
+}
+
+.example-information-left{
+	grid-column: 1/7;
+}
+
+.example-image-right{
+	grid-column: 8/13;
+}
+
+
+
 
 
 /*REFERENCES===============================================*/
