@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+.wrapper{
+	width: clamp(18.75rem,100%,100rem);
+	margin: 0 auto;
+}
+
 .main-grid-container{
 	display:block;
 	width: clamp(18.75rem,75%,100rem);
@@ -49,6 +54,18 @@
 
 .main-grid.works{
 	padding:0 9rem;
+}
+
+.three-grid-columns{
+	display: grid;
+	grid-column: 1/13;
+	grid-template-columns:repeat(3, minmax(0,1fr));
+	height: auto;
+	margin-bottom: 1.5rem;
+}
+
+.img-caption.three-grid-caption{
+	grid-column: 2/3;
 }
 
 /*comment test*/
@@ -613,7 +630,7 @@
 	}
 
 	.main-grid.works{
-		padding:0 2rem;
+		padding:0 0rem;
 	}
 
 	/*STYLE GUIDE-----------------------*/
@@ -626,4 +643,10 @@
 	}
 }
 
+/*Inbetween (344px)------------------------------------------------------------------*/
+@media screen and (max-width:21.5em){
+	.main-grid.works{
+		padding:0 2rem;
+	}
+}
 

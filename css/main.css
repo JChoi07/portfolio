@@ -708,12 +708,13 @@ header a:hover{
 	color:white;
 	position:absolute;
 	z-index: 200;
-	top:7.75rem;
+	top:-1.25rem;
 	left:1.875rem;
 }
 
 .work-preview-image{
 	grid-column:1/8;
+	position: relative;
 }
 
 .work-preview-image img{
