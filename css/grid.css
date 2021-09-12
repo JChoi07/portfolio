@@ -129,7 +129,7 @@
 	}
 
 	.work-preview-number{
-		top:5.25rem;
+		top:0rem;
 		left:1.875rem;
 	}
 
@@ -277,6 +277,11 @@
 	.work-preview-content{
 		grid-column:1/12;
 		padding-left:5.5rem;
+	}
+
+	.work-preview-number{
+		top:-0.5rem;
+		left:1.875rem;
 	}
 
 	.principles-header, .questions-header{
@@ -439,7 +444,7 @@
 
 	/*WORKS----------------------------*/
 	.work-preview-number{
-		top:6rem;
+		top:-0.5rem;
 		left:1.875rem;
 	}
 }
@@ -477,7 +482,7 @@
 	}
 
 	.work-preview-number{
-		top:5rem;
+		top:-1rem;
 		left:1.875rem;
 	}
 
@@ -625,7 +630,7 @@
 	}
 
 	.work-preview-number{
-		top:5.25rem;
+		top:-1rem;
 		left:1.25rem;
 	}
 
