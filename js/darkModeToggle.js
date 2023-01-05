@@ -1,6 +1,6 @@
 'use strict'
 
-//Variables
+// VARIABLES---------------------------------------------------------------
 let lightModeButton = document.querySelector(".button.light-mode");
 lightModeButton.setAttribute('aria-active', 'true');
 let lightMode = true;
@@ -10,7 +10,7 @@ darkModeButton.setAttribute('aria-active', 'false');
 let darkMode = false;
 
 
-// Functions and Interactive Script---------------------------------------
+// FUNCTIONS AND INTERACTIVE SCRIPT---------------------------------------
 // Set data theme from light to dark
 function switchTheme(){
 	if (lightMode==true && darkMode==false){
