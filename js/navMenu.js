@@ -5,7 +5,7 @@
 'use strict'
 
 
-// VARIABLES---------------------------------------------------------------
+//Variables
 let hamburgerButton = document.querySelector(".hamburger-button");
 let hamburgerActive = false;
 hamburgerButton.setAttribute('aria-open', 'false');
@@ -23,7 +23,7 @@ let navBar = document.querySelector("#nav-header");
 navBar.setAttribute('aria-scroll-minimize', 'false');
 
 
-// FUNCTIONS AND INTERACTIVE SCRIPTS---------------------------------------
+// Functions and Interactive Script---------------------------------------
 // Close hamburger menu if screen is bigger than than 513px
 function hamburgerClose(e){
 	if (e.matches){
