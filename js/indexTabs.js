@@ -3,15 +3,18 @@
 // VARIABLES-------------------------------------------------------
 
 // Work Buttons
-<<<<<<< HEAD
-let workButton1 = document.querySelector(".works-2022");
+let workButton1 = document.querySelector(".progress-bar-text.indexTab1");
 workButton1.setAttribute('aria-active', 'true');
 
-let workButton2 = document.querySelector(".works-2020-21");
+let workButton2 = document.querySelector(".progress-bar-text.indexTab2");
 workButton2.setAttribute('aria-active', 'false');
 
 // Work Sections
-//insert stuff here 
+let worksSection1 = document.querySelector(".works-2022");
+worksSection1.setAttribute('aria-active', 'true');
+
+let worksSection2=document.querySelector(".works-2020-21");
+worksSection2.setAttribute('aria-active', 'false');
 
 // FUNCTIONS AND INTERACTIVE SCRIPT--------------------------------
 // Work section 1 highlight
@@ -34,19 +37,7 @@ workButton1.addEventListener("click", () => {
 	//removing work 2022 section
 	workButton2.classList.remove("active");
 	workButton2.setAttribute('aria-active', 'false');
-=======
-let workButton1 = document.querySelector(".progress-bar-text.indexTab1");
-workButton1.setAttribute('aria-active', 'true');
 
-let workButton2 = document.querySelector(".progress-bar-text.indexTab2");
-workButton2.setAttribute('aria-active', 'false');
-
-// Work Sections
-let worksSection1 = document.querySelector(".works-2022");
-worksSection1.setAttribute('aria-active', 'true');
-
-let worksSection2=document.querySelector(".works-2020-21");
-worksSection2.setAttribute('aria-active', 'false');
 
 // FUNCTIONS AND INTERACTIVE SCRIPT--------------------------------
 // Work section 1
@@ -69,5 +60,4 @@ workButton2.addEventListener("click", () => {
 	//removing work 2022 section
 	worksSection1.classList.remove("active");
 	worksSection1.setAttribute('aria-active', 'false');
->>>>>>> parent of cb598b4... Merge branch 'main' into Testing
 })
