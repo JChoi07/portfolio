@@ -10,54 +10,44 @@ let workButton2 = document.querySelector(".progress-bar-text.indexTab2");
 workButton2.setAttribute('aria-active', 'false');
 
 // Work Sections
-let worksSection1 = document.querySelector(".works-2022");
-worksSection1.setAttribute('aria-active', 'true');
+let worksTab1 = document.querySelector("#work-tab-1");
+worksTab1.setAttribute('aria-active', 'true');
 
-let worksSection2=document.querySelector(".works-2020-21");
-worksSection2.setAttribute('aria-active', 'false');
-
-// FUNCTIONS AND INTERACTIVE SCRIPT--------------------------------
-// Work section 1 highlight
-workButton1.addEventListener("click", () => {
-	//adding work 2022 section
-	workButton1.classList.add("active");
-	workButton1.setAttribute('aria-active', 'true');
-
-	//removing work 2021 section
-	workButton2.classList.remove("active");
-	workButton2.setAttribute('aria-active', 'false');
-})
-
-// Work section 2 highlight
-workButton1.addEventListener("click", () => {
-	//adding work 2021 section
-	workButton1.classList.add("active");
-	workButton1.setAttribute('aria-active', 'true');
-
-	//removing work 2022 section
-	workButton2.classList.remove("active");
-	workButton2.setAttribute('aria-active', 'false');
+let worksTab2 = document.querySelector("#work-tab-2");
+worksTab2.setAttribute('aria-active', 'false');
 
 
 // FUNCTIONS AND INTERACTIVE SCRIPT--------------------------------
 // Work section 1
 workButton1.addEventListener("click", () => {
+	//set colour of text
+	workButton1.classList.add("active");
+	workButton1.setAttribute('aria-active', 'true');
+	workButton2.classList.remove("active");
+	workButton2.setAttribute('aria-active', 'false');
+
 	//adding work 2022 section
-	worksSection1.classList.add("active");
-	worksSection1.setAttribute('aria-active', 'true');
+	worksTab1.classList.add("active");
+	worksTab1.setAttribute('aria-active', 'true');
 
 	//removing work 2021 section
-	worksSection2.classList.remove("active");
-	worksSection2.setAttribute('aria-active', 'false');
+	worksTab2.classList.remove("active");
+	worksTab2.setAttribute('aria-active', 'false');
 })
 
 // Work section 2
 workButton2.addEventListener("click", () => {
+	//set colour of text
+	workButton1.classList.remove("active");
+	workButton1.setAttribute('aria-active', 'true');
+	workButton2.classList.add("active");
+	workButton2.setAttribute('aria-active', 'false');
+
 	//adding work 2021 section
-	worksSection2.classList.add("active");
-	worksSection2.setAttribute('aria-active', 'true');
+	worksTab2.classList.add("active");
+	worksTab2.setAttribute('aria-active', 'true');
 
 	//removing work 2022 section
-	worksSection1.classList.remove("active");
-	worksSection1.setAttribute('aria-active', 'false');
+	worksTab1.classList.remove("active");
+	worksTab1.setAttribute('aria-active', 'false');
 })
