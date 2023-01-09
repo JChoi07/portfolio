@@ -88,6 +88,11 @@
 	.banner-wrapper{
 		padding-top:2rem;
 	}
+
+	/*WORKS---------------------------*/
+	.main-grid.works{
+		padding: 0 5rem;
+	}
 }
 
 
@@ -183,6 +188,11 @@
 	.about-me-right-side{
 		grid-column:1/10;
 	}
+
+	/*WORKS------------------*/
+	.principle-body{
+		padding-left:1rem;
+	}
 }
 
 /*Inbetween (896px)------------------------------------------------------------------*/
@@ -195,6 +205,19 @@
 	/*INDEX------------------------*/
 	#works .divider-line{
 		margin:0 4rem;
+	}
+	
+	.work-pages-content{
+		grid-column:1/13;
+	}
+
+	.work-pages-images-container{
+		grid-column:1/13;
+	}
+
+	.main-grid-container.work{
+		padding-top:3rem;
+		padding-bottom:3rem;
 	}
 
 	/*ABOUT ME PAGE------------------*/
@@ -226,7 +249,7 @@
 
 	.graphical-experimentation-image, .final-graphic-assets-img1, .final-graphic-assets-img2, .final-graphic-assets-img3,
 	.example-gif, .example-image, .example-image-right, .microsite-example.works-grid .example-video, 
-	.microsite-example.works-grid.twitch .example-video, .microsite-example.works-grid.twitch .example-image{
+	.microsite-example.works-grid.twitch .example-video,  .microsite-example.works-grid.twitch .example-image{
 		grid-column:1/13;
 	}
 
@@ -255,20 +278,6 @@
 	}
 
 
-	/*INDEX------------------------*/
-	.work-pages-content{
-		grid-column:1/13;
-	}
-
-	.work-pages-images-container{
-		grid-column:1/13;
-	}
-
-	.main-grid-container.work{
-		padding-top:3rem;
-		padding-bottom:3rem;
-	}
-
 	/*WORKS-------------------------*/
 	.main-grid.works{
 		padding:0 0;
@@ -288,7 +297,16 @@
 		grid-column:1/13;
 	}
 
-	.principle, .question, .question-end{
+	.principle{
+		grid-column:1/2;
+	}
+
+	.principle-body{
+		grid-column:2/13;
+		padding-left:1rem;
+	}
+
+	.question, .question-end{
 		grid-column:1/13;
 		display:flex;
 	}
@@ -405,7 +423,7 @@
 	}
 
 	/*INDEX----------------------------*/
-	.theme-buttons img{
+	.theme-buttons svg{
 		width:20px;
 		height:20px;
 	}
@@ -440,6 +458,10 @@
 		display:flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.progress-bar{
+		padding-top:3.9rem;
 	}
 
 	/*WORKS----------------------------*/

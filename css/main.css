@@ -37,7 +37,7 @@ Control F to these sections:
 /*GLOBAL========================================================================*/
 *{
 	box-sizing: border-box;
-	/*transition: background 0.6s ease-in-out, color 0.5s ease-in-out;*/
+/*	transition: background 0.6s ease-in-out, color 0.5s ease-in-out;*/
 }
 
 /*Dark/Light Mode Theme*/
@@ -50,6 +50,7 @@ Control F to these sections:
 	--bg-color:#FFFFFF;
 	--heading-color:black;
 	--line-color:rgb(0,0,0, .5);
+
 }
 
 [data-theme="dark"]{
@@ -57,7 +58,7 @@ Control F to these sections:
 	--secondary-color:#FFBB73;
 	--tertiary-color:#26C5FF;
 	--font-color:white;
-	--bg-color:#373A36;
+	--bg-color:#272727;
 	--heading-color:white;
 	--line-color:white;
 }
@@ -132,6 +133,17 @@ p{
 	font-weight:400;
 }
 
+.content-list-parent{
+	padding-top:1rem;
+}
+
+.content-list-child{
+	padding-bottom:1rem;
+}
+
+.list{
+	grid-column:2/11;
+}
 .footer-social-media-mobile{
 	display:none;
 }
@@ -166,6 +178,22 @@ p{
 .img-caption{
 	text-align: center;
 	font-size: 0.875rem;
+}
+
+.annotation-quote{
+	margin-top:2rem;
+	margin-bottom:0.5rem;
+}
+
+.annotation-quote-body{
+	margin-top:0rem;
+	margin-bottom:0.5rem;
+}
+
+.annotation-quote-name{
+	margin-top:0rem;
+	font-size:0.813rem;
+	font-style:italic;
 }
 
 /*COLOR SWATCHES---------------------------------------------------------------------------------------------*/
@@ -241,9 +269,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding:1.25rem 1.875rem;
-	/*background:white;*/
 	transition:top 0.3s;
-
 	background-color:var(--bg-color);
 }
 
@@ -282,7 +308,7 @@ header a:hover{
 }
 
 .link-one{
-	padding-right:2.5rem	;
+	padding-right:2.5rem;
 }
 
 
@@ -622,8 +648,10 @@ header a:hover{
 }
 
 .progress-bar-wrapper{
-	/*position:sticky;
-	top:0;*/
+	position:sticky;
+	top:-1px;
+	z-index: 99;
+	background-color:var(--bg-color);
 }
 
 .progress-bar{
@@ -631,7 +659,7 @@ header a:hover{
 	justify-content: flex-start;
 	width: clamp(18.75rem,75%,100rem);
 	margin:0 auto;
-	padding-top:2.5rem;
+	padding-top:3rem;
 
 	background-color:var(--bg-color);
 }
@@ -639,6 +667,19 @@ header a:hover{
 .progress-bar a{
 	text-decoration: none;
 	color:var(--font-color);
+	text-decoration-color:var(--tertiary-color);
+}
+
+.progress-bar p{
+	text-decoration: none;
+	color:var(--font-color);
+}
+
+.progress-bar-text.active{
+	text-decoration: underline;
+	text-decoration-thickness: 0.094rem;
+	text-underline-offset: 0.125rem;
+	text-decoration-color: var(--tertiary-color);
 }
 
 .progress-bar-works{
@@ -647,6 +688,7 @@ header a:hover{
 
 .progress-bar-text{
 	padding-right:2.5rem;
+	cursor:pointer;
 }
 
 .work-pages-content{
@@ -674,6 +716,62 @@ header a:hover{
 .ethos-bar-status{
 	grid-column:5/14;
 }*/
+
+/*Depending on what option is selected, pickup forms or delivery forms can be hidden*/
+#work-tab-1{
+	display:none;
+	animation: fadeEffect1 .75s; /* Fading effect takes 1 second */
+	transition:ease;
+}
+
+#work-tab-1.active{
+	display:block;
+}
+
+#work-tab-2{
+	display:none;
+	animation: fadeEffect2 .75s; /* Fading effect takes 1 second */
+	transition:ease;
+}
+
+#work-tab-2.active{
+	display:block;
+}
+
+@keyframes fadeEffect1 {
+  from {
+  	opacity: 0;
+  }
+  to {
+  	opacity: 1;
+  }
+
+  from {
+  	transform: translateX(-5vw);
+  }
+  to {
+  	transform: translateX(0vw);
+  }
+}
+
+@keyframes fadeEffect2 {
+  from {
+  	opacity: 0;
+  }
+  to {
+  	opacity: 1;
+  }
+
+  from {
+  	transform: translateX(5vw);
+  }
+  to {
+  	transform: translateX(0vw);
+  }
+}
+
+
+
 
 /*WORKS PAGE (VENTURA FUTURE)=====================================================================*/
 .text-section{
@@ -742,8 +840,8 @@ header a:hover{
 	display:grid;
 	grid-template-columns: repeat(12,1fr);
 	grid-row:auto;
-	padding-top:2.5rem;
-	padding-bottom:5rem;
+	padding-top:1rem;
+	padding-bottom:2.5rem;
 }
 
 .works-header{
@@ -760,8 +858,18 @@ header a:hover{
 }
 
 .principle{
-	grid-column:5/13;
+	grid-column:5/6;
+}
+
+.principle-body{
+	grid-column:6/13;
 	display:flex;
+	flex-direction:column;
+}
+
+.principle-copy{
+	margin:0;
+	padding-left:0.5rem;
 }
 
 .principle-number{
@@ -769,8 +877,8 @@ header a:hover{
 }
 
 .principle-name{
-	padding-left:2.5rem;
-	margin-bottom:1.25rem;
+	padding-left:0.5rem;
+	margin-bottom:0.5rem;
 }
 
 .graphical-experimentation-header{
@@ -1202,6 +1310,15 @@ header a:hover{
 	padding-bottom:5rem;
 }
 
+#questions-grid-reduced{
+	grid-column:1/13;
+	display:grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-row:auto;
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+
 .questions-header{
 	grid-column:1/5;
 	display:flex;
@@ -1241,6 +1358,28 @@ header a:hover{
 }
 
 
+/*WORKS PAGE (NYT)=======================*/
+.under-header{
+	padding-top:1.5rem;
+	padding-bottom:3rem;
+}
+
+.under-header.text{
+	padding-top:1.5rem;
+	padding-bottom:0rem;
+}
+
+/*WORKS PAGE (WATG)=======================*/
+.pull-quote{
+	grid-column:2/12;
+	display:flex;
+}
+
+.question-end.pull-quote{
+	grid-column: 2/12;
+	padding-left: 0.5rem;
+	justify-self: start;
+}
 
 
 
