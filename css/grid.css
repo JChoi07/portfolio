@@ -21,10 +21,8 @@
 }
 
 #landing{
-	height:75vh;
+	height:100vh;
 }
-
-
 
 
 .main-grid{
@@ -198,6 +196,13 @@
 	/*WORKS------------------*/
 	.principle-body{
 		padding-left:1rem;
+	}
+}
+
+/*Inbetween (912px)------------------------------------------------------------------*/
+@media screen and (max-width: 57em){
+	#landing{
+		height:auto;
 	}
 }
 
@@ -501,7 +506,7 @@
 
 	/*INDEX-------------------------------*/
 	#landing .main-grid-container{
-		padding-top:2.5rem;
+		padding-top:2rem;
 	}
 
 	/*WORKS----------------------------*/
@@ -637,7 +642,7 @@
 	/*INDEX--------------------------------*/
 	#landing .main-grid-container{
 		margin:0 1.25rem 0 1.25rem;
-		padding-top:2rem;
+		padding-top:4rem;
 	}
 
 	.main-grid-container.work{
