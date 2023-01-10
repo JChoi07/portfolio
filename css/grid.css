@@ -98,6 +98,10 @@
 	.main-grid.works{
 		padding: 0 5rem;
 	}
+
+	#work-preview{
+		padding-top:2.5rem;
+	}
 }
 
 
@@ -106,10 +110,6 @@
 	/*INDEX---------------------------*/
 	#works .divider-line{
 		margin:0 7.5rem;
-	}
-
-	#work-preview{
-		padding-top:2.5rem;
 	}
 }
 
