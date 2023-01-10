@@ -107,6 +107,10 @@
 	#works .divider-line{
 		margin:0 7.5rem;
 	}
+
+	#work-preview{
+		padding-top:2.5rem;
+	}
 }
 
 /*Inbetween (1180px)-----------------------------------------------------------------------------------*/
