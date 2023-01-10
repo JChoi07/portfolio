@@ -269,9 +269,18 @@
 		grid-column:1/13;
 	}
 
+	.example-information-first{
+		grid-column:1/13;
+		grid-row:2/3;
+	}
+
 	.example-information, .example-information-left, .microsite-example.works-grid.twitch .example-information{
 		grid-column:1/13;
 		grid-row:1/2;
+	}
+
+	.works-subheader{
+		margin:0rem;
 	}
 
 	.example-video.dippd-desktop{
