@@ -1049,7 +1049,7 @@ header a:hover{
 }
 
 .microsite-example.works-grid.twitch .example-image{
-	grid-column:1/7;
+	grid-column:1/6;
 	padding-bottom:0;
 }
 
