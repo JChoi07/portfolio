@@ -265,7 +265,8 @@
 
 	.graphical-experimentation-image, .final-graphic-assets-img1, .final-graphic-assets-img2, .final-graphic-assets-img3,
 	.example-gif, .example-image, .example-image-right, .microsite-example.works-grid .example-video, 
-	.microsite-example.works-grid.twitch .example-video,  .microsite-example.works-grid.twitch .example-image{
+	.microsite-example.works-grid.twitch .example-video,  .microsite-example.works-grid.twitch .example-image,
+	.microsite-example.works-grid.twitch .example-video.watg{
 		grid-column:1/13;
 	}
 
@@ -274,7 +275,8 @@
 		grid-row:2/3;
 	}
 
-	.example-information, .example-information-left, .microsite-example.works-grid.twitch .example-information{
+	.example-information, .example-information-left, .microsite-example.works-grid.twitch .example-information, 
+	.microsite-example.works-grid.twitch .example-information.watg{
 		grid-column:1/13;
 		grid-row:1/2;
 	}

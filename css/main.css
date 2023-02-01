@@ -917,7 +917,7 @@ header a:hover{
 }
 
 .works-subheader{
-	margin-top:1.25rem;
+	margin-top:0rem;
 	margin-bottom:1.25rem;
 	font-weight:600;
 }
@@ -1071,12 +1071,22 @@ header a:hover{
 }
 
 .microsite-example.works-grid.twitch .example-video{
-	grid-column:1/7;
+	grid-column:1/6;
+	padding-bottom:0;
+}
+
+.microsite-example.works-grid.twitch .example-video.watg{
+	grid-column:1/5;
+	padding-bottom:0;
+}
+
+.microsite-example.works-grid.twitch .example-information.watg, .example-information-first.watg{
+	grid-column:5/11;
 	padding-bottom:0;
 }
 
 .microsite-example.works-grid.twitch .example-information, .example-information-first{
-	grid-column:7/13;
+	grid-column:6/12;
 	padding-bottom:0;
 }
 
