@@ -1085,7 +1085,7 @@ header a:hover{
 	padding-bottom:0;
 }
 
-.microsite-example.works-grid.twitch, .example-information-first{
+.microsite-example.works-grid.twitch .example-information, .example-information-first{
 	grid-column:6/12;
 	padding-bottom:0;
 }
