@@ -1380,6 +1380,10 @@ header a:hover{
 	padding-bottom:3rem;
 }
 
+.no-under-header{
+	padding-bottom:0rem;
+}
+
 .under-header.text{
 	padding-top:1.5rem;
 	padding-bottom:0rem;
