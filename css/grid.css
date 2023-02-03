@@ -270,7 +270,7 @@
 		grid-column:1/13;
 	}
 
-	.example-information-first{
+	.example-information-first, .example-information-first.watg{
 		grid-column:1/13;
 		grid-row:2/3;
 	}
