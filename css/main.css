@@ -269,8 +269,9 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding:1.25rem 1.875rem;
-	transition:top 0.3s;
-/*	background-color:var(--bg-color);*/
+	transition:top 0.3s, background 0.4s ease-in-out;
+
+	background-color:var(--bg-color);
 }
 
 header a{
