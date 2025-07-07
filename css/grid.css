@@ -25,6 +25,9 @@
 /*	test*/
 }
 
+#landing-tease{
+	height:100vh;
+}
 
 .main-grid{
 	display:grid;
@@ -76,6 +79,37 @@
 /*comment test*/
 
 
+/*Teaser Landing Page===============================================*/
+.main-grid-container.portfolio-tease{
+	display:100vh;
+	padding-top:0;
+}
+
+.tease-grid{
+	display:grid;
+	grid-template-columns:repeat(12,1fr);
+}
+
+.main-grid.portfolio-tease{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	text-align:center;
+	height:100vh;
+}
+
+.portfolio-teaser-header{
+	align-items:center;
+	grid-column:1/13;
+}
+
+
+.tease-button{
+	grid-column:6/8;
+	color:black;
+}
+
+
 /*MEDIA QUERIES========================================================================================*/
 /*Inbetween (1364px)--------------------------------------------------------------------------------------*/
 @media screen and (max-width:85.25em){
@@ -88,6 +122,12 @@
 	#landing .main-grid-container{
 		padding-top:2rem;
 		padding-bottom:1rem;
+	}
+
+	#landing .main-grid-container .portfolio-tease{
+		padding-top:2rem;
+		padding-bottom:1rem;
+		height:100%;
 	}
 
 	.banner-wrapper{
@@ -133,6 +173,12 @@
 	#works .divider-line{
 		margin:0 7.5rem;
 	}
+
+	/*LANDING TEASE---------------------------*/
+	.tease-button{
+		grid-column:5/9;
+		color:black;
+	}
 }
 
 /*Inbetween (1072px)-----------------------------------------------------------------------------------*/
@@ -177,9 +223,15 @@
 	}
 
 	/*INDEX------------------------*/
+	.main-grid-container{
+		grid-column:1/13;
+		position:centre;
+	}
+
 	.ethos{
 		grid-column:1/13;
 	}
+
 	#works .divider-line{
 		margin:0 6rem;
 	}
@@ -304,6 +356,11 @@
 		grid-template-columns: 1fr 0.1fr 1fr;
 	}
 
+	/*LANDING TEASE---------------------------*/
+	.tease-button{
+		grid-column:4/10;
+		color:black;
+	}
 
 	/*WORKS-------------------------*/
 	.main-grid.works{
@@ -523,6 +580,12 @@
 	/*INDEX-------------------------------*/
 	#landing .main-grid-container{
 		padding-top:2rem;
+	}
+
+	/*LANDING TEASE---------------------------*/
+	.tease-button{
+		grid-column:3/10;
+		color:black;
 	}
 
 	/*WORKS----------------------------*/
